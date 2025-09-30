@@ -1,0 +1,28 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    max-width: 1128px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(16, 24, 40, 0.06);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+/* Модалка */
+.modal img {
+    max-width: 1112px;
+    max-height: 640px;
+    object-fit: contain;
+}
